@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images (1).png">
+</head>
+<body style="background-image: url(images\ \(16\).jpeg);">
+    <div class="container">
+        <div class="header">
+            <img src="images (1).png" height="200px" width="200px" alt="">
+            <h1>Tech Skill Vocational Institute</h1>
+            
+          </div>
+        <h1>Test No 5</h1>
+        <div class="name-section">
+            <label for="studentName"><span style="color: rgb(19, 94, 9); font-weight: bolder;">Enter your name:</span></label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. What does NLP stand for?</p>
+            <div><input type="checkbox" id="artificialIntelligence" value="Artificial intelligence">
+            <label for="artificialIntelligence">Natural Learning Program</label></div>
+           <div>  <input type="checkbox" id="artificialIntelligence" value="Articial intelligence">
+            <label for="artificialIntelligence">Natural Language Processing </label></div>
+            
+           
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2. What is the purpose of semantic analysis in NLP?</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="Agriculture">Translating text into other languages</option>
+                <option value="Medical">Checking grammar mistakes</option>
+                <option value="Weather forecast">Understanding the meaning of sentences</option>
+                <option value="Both a,b & c">Counting the number of words</option>
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        <!-- Question 1 (Multiple Choice) -->
+<div class="question">
+    <p>3. What is the use of language detection?</p>
+    <div><input type="radio" id="computerVision" name="workloadAI" value="Computer Vision">
+    <label for="computerVision">Translating documents</label>
+    </div>
+   <div> <input type="radio" id="machineLearning" name="workloadAI" value="Machine Learning">
+    <label for="machineLearning">Identifying the language of the input text</label>
+    </div>
+   <div> <input type="radio" id="regression" name="workloadAI" value="Regression">
+    <label for="regression">Converting speech to text</label></div>
+</div>
+
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4. What does the “code” in language detection usually represent?</p>
+   <div> <input type="radio" id="label" name="train" value="label">
+    <label for="label">Secret password</label>
+    </div>
+   <div> <input type="radio" id="feature" name="train" value="feature">
+    <label for="feature">Language short form like 'en' for English </label>
+    </div>
+   <div> <input type="radio" id="dataset" name="train" value="dataset">
+    <label for="dataset">Barcode of a document</label></div>
+</div>
+
+<div class="question">
+    <p>5. What does a high NLP score mean in language models?
+</p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">The system is slow</option>
+        
+        <option value="Binary Classification"> The model is expensive</option>
+        
+        <option value="Both a,b & c">The prediction or classification is confident</option>
+    </select>
+</div>
+<div class="question">
+    <p>6. What type of data does NLP mostly work with?</p>
+    <input type="checkbox" id="typeRegression" value="Regression">
+    <label for="typeRegression"> Audio</label>
+    
+    <input type="checkbox" id="typesupervisedlearning" value="Supervised Learning">
+    <label for="typesupervisedlearning">Images</label>
+    
+    <input type="checkbox" id="typeunsupervisedlearning" value="Unsupervised Learning">
+    <label for="typeunsupervisedlearning">Text</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>7. Which technique is used to remove common words like “is”, “the”, “and”?
+ </p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="feature">Vectorization</option>
+        
+        <option value="label">Tokenization</option>
+         <option value="labl">Stop word removal</option>
+    </select>
+</div>
+<div class="question">
+    <p>8.  Which of the following is a stemmed form of the word "running"? </p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="feature">run </option>
+         <option value="label"> running</option>
+        <option value="lael"> runs</option>
+              <option value="labl">ran</option>
+    </select>
+</div>
+<div class="question">
+    <p>9.What is speech synthesis?   </p>
+    <input type="radio" id="artificiallife" name="AI" value="artificiallife">
+    <label for="artificiallife">Converting text into speech</label>
+    <input type="radio" id="huan" name="AI" value="huan">
+    <label for="huan">Translating speech to another language</label>
+    <input type="radio" id="human" name="AI" value="human">
+    <label for="human">Recording voice</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>10.Which technology allows computers to "speak" like humans? </p>
+
+    <div>
+        <input type="radio" id="stylr" name="image" value="stylr"> 
+        <label for="stylr">Speech synthesis</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Elvenls" name="image" value="Elevenls">
+        <label for="Elvenls">Speech Recognition</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Elevenlab" name="image" value="Elvenlab">
+        <label for="Elevenlab">Text summarization</label>
+    </div>
+</div>
+
+
+<br><br>
+
+        
+        <button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
